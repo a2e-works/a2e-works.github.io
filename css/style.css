@@ -87,3 +87,5 @@ figcaption{font-size:.88rem;font-weight:700;margin-top:10px;color:var(--cream)}
 .proof{margin:10px 0 4px;max-width:640px}
 .proof img{display:block;width:100%;height:auto;background:#fff;border:3px solid var(--bk);box-shadow:4px 4px 0 var(--bk)}
 .proof figcaption{font-size:.8rem;margin-top:6px}
+
+.manga figcaption,.video figcaption,.shots figcaption{margin:0 0 10px;font-size:1rem}
