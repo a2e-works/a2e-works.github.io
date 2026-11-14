@@ -69,3 +69,18 @@ footer.site p{margin:14px 0 0;font-family:"DotGothic16",monospace}
 
 @media (max-width:520px){nav a{margin-left:0}.grid .card{transform:none!important}}
 @media (prefers-reduced-motion:reduce){.btn{transition:none}}
+
+/* product page media (IDおそうじ) */
+.manga{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin:20px 0}
+.manga figure,.shots figure,.video figure{margin:0}
+.manga img,.shots img{display:block;width:100%;height:auto;border:4px solid var(--bk);box-shadow:6px 6px 0 var(--bk);background:#fff}
+.manga a:hover,.shots a:hover{background:none}
+figcaption{font-size:.88rem;font-weight:700;margin-top:10px;color:var(--cream)}
+.video{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin:20px 0}
+.video video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:var(--bk);border:4px solid var(--bk);box-shadow:6px 6px 0 var(--bk)}
+.video.one{grid-template-columns:1fr;max-width:640px}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin:20px 0}
+.steps{counter-reset:s;list-style:none;padding:0;margin:20px 0}
+.steps li{counter-increment:s;position:relative;padding:4px 0 14px 54px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:2px;width:38px;height:38px;border-radius:50%;background:var(--or);color:var(--bk);font-weight:900;display:flex;align-items:center;justify-content:center;border:3px solid var(--bk)}
+.steps b{display:block;font-size:1.05rem}
