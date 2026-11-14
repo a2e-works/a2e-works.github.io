@@ -91,3 +91,7 @@ figcaption{font-size:.88rem;font-weight:700;margin-top:10px;color:var(--cream)}
 .manga figcaption,.video figcaption,.shots figcaption{margin:0 0 10px;font-size:1rem}
 .shots figcaption{min-height:1.6em}
 .shots img{aspect-ratio:960/774;object-fit:cover;object-position:top}
+.manga figcaption{text-align:center;font-family:"DotGothic16",monospace;font-size:1.15rem;letter-spacing:.2em;color:var(--or);margin:0 0 12px}
+.omake-box{margin:56px 0 20px;padding:28px 24px 8px;border:3px dashed var(--cream);max-width:740px;box-sizing:border-box}
+.omake-h{display:inline-block;margin:0 0 12px;padding:6px 14px;background:var(--cream);color:var(--bk);font-size:1.05rem;transform:rotate(-1deg)}
+.omake-box p{margin:0 0 18px}
