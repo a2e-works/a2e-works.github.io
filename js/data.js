@@ -5,14 +5,14 @@
    url が空("")の記事は「公開準備中」と表示されます。noteに投稿したらURLを入れてください。 */
 window.A2E = {
   config: {
-    demoUrl: "https://a2e-works.github.io/dencho_DIY/",
+    demoUrl: "",   // 電帳DIYのデモ版。公開したら "https://a2e-works.github.io/dencho_DIY/" に戻す
     githubUrl: "https://github.com/a2e-works",
     buyUrl: "",   // ココナラ等の販売ページURL。空の間は「販売開始までお待ちください」と表示
     // 製品ごとの設定(data-demo="idosouji" などで使います。空("")の間はボタンが「準備中」になります)
     products: {
       idosouji: {
         demo: "https://a2e-works.github.io/id-osouji/",                      // デモ版(公開リポジトリ a2e-works/id-osouji の GitHub Pages)
-        download: "https://github.com/a2e-works/id-osouji/releases/latest",  // デモ版のzip(GitHub の Releases)
+        download: "",  // デモ版のzip。GitHub の Releases を作ったら "https://github.com/a2e-works/id-osouji/releases/latest" を入れる
         guide: "https://a2e-works.github.io/id-osouji/docs/mail-guide.html",  // メールの読み込み手順
         buy: ""                                                              // Vector などの販売ページURL
       }

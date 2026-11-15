@@ -22,7 +22,7 @@
 
   var P = D.config.products || {};
   function prod(el, attr) { var k = el.getAttribute(attr); return k ? (P[k] || {}) : null; }
-  function off(el, text) { el.removeAttribute("href"); el.removeAttribute("target"); el.classList.add("off"); if (el.classList.contains("btn")) el.textContent = text; }
+  function off(el, text) { el.removeAttribute("href"); el.removeAttribute("target"); el.classList.add("off"); if (el.classList.contains("btn")) el.textContent = text; else if (el.textContent.indexOf("準備中") < 0) el.textContent += "(準備中)"; }
   document.querySelectorAll("[data-demo]").forEach(function (el) {
     var p = prod(el, "data-demo"), u = p ? p.demo : D.config.demoUrl;
     if (u) el.href = u; else off(el, "デモ版は公開準備中です");
