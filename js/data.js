@@ -11,7 +11,7 @@ window.A2E = {
     // 製品ごとの設定(data-demo="idosouji" などで使います。空("")の間はボタンが「準備中」になります)
     products: {
       idosouji: {
-        demo: "https://a2e-works.github.io/id-osouji/",                      // デモ版(公開リポジトリ a2e-works/id-osouji の GitHub Pages)
+        demo: "",   // デモ版。公開したら "https://a2e-works.github.io/id-osouji/" に戻す(a2e-works/id-osouji の GitHub Pages)
         download: "",  // デモ版のzip。GitHub の Releases を作ったら "https://github.com/a2e-works/id-osouji/releases/latest" を入れる
         guide: "https://a2e-works.github.io/id-osouji/docs/mail-guide.html",  // メールの読み込み手順
         buy: ""                                                              // Vector などの販売ページURL
