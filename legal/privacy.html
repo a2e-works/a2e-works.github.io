@@ -4,7 +4,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="../css/style.css"></head><body class="legal">
 <header class="site"><div class="wrap"><a class="brand" href="../index.html"><img src="../images/brand.png" alt="A2E WORKS"></a><nav><a href="../index.html">トップ</a><a href="../dencho-diy.html">電帳DIY</a><a href="../id-osouji.html">IDおそうじ</a><a href="../articles.html">記事</a><a href="../changelog.html">更新履歴</a></nav></div></header><div class="stripe"></div>
 <main><div class="wrap">
-<h1>プライバシーポリシー</h1><p>最終改定日：2026年11月14日</p>
+<h1>プライバシーポリシー</h1><p>最終改定日：2026年11月18日</p>
 <p>A2E Works(以下「当方」)は、本サイトおよび当方のソフトウェア(以下「本製品」)で扱う情報を、次のとおり取り扱います。</p>
 <h2>1. 本製品で扱うデータ</h2>
 <p><strong>電帳DIY</strong>：読み込まれた書類のデータ、台帳、作業記録は、利用者のパソコンのブラウザ内および利用者が指定したフォルダにのみ保存されます。当方のサーバーには送信されません。</p>
@@ -17,9 +17,56 @@
 <li>Gmail版を使う場合、利用者がGoogleにログインして許可したうえで、Googleとだけ通信します。読み取り専用の許可で、差出人・件名・日付と本文の冒頭の数行を読み、その処理は利用者のブラウザの中だけで行います。Googleから受け取った情報を当方が受け取ったり、第三者に提供したりすることはありません。Google API から受け取った情報の利用は、Google API サービスのユーザーデータに関するポリシー(限定的使用の要件を含みます)に従います。</li>
 <li>画面の「公式サイト」「検索」などのリンクを利用者が押した場合、そのサイトや検索サービス(Google)へ移動します。検索の場合、サービス名を含む検索語が検索サービスに送られます。当方に情報が送られることはありません。</li>
 </ul>
-<h2>3. 本サイトについて</h2><p>本サイトは、現時点でアクセス解析やCookieを利用していません。ホスティングにはGitHub Pagesを、文字の表示にはGoogle Fontsを利用しており、アクセスの際にGitHubやGoogleのサーバーへ接続し、アクセスログが取得される場合があります。</p>
-<h2>4. お問い合わせ</h2><p>販売ページ(ココナラ等)のメッセージ機能や、noteへのコメントでご連絡いただいた際に取得する情報は、お問い合わせへの対応のためにのみ利用します。</p>
-<h2>5. 改定</h2><p>必要に応じて改定します。改定後は本ページに掲載します。</p>
+<h2 id="google-user-data">3. Googleユーザーデータの取り扱い（IDおそうじ Gmail版）</h2>
+<p>IDおそうじのGmail版が、Google API（Gmail API）から受け取るデータ（以下「Googleユーザーデータ」）の取り扱いは、次のとおりです。</p>
+<h3>(1) アクセスするデータ</h3>
+<ul>
+<li>許可の範囲は、読み取り専用の <code>https://www.googleapis.com/auth/gmail.readonly</code> だけです。</li>
+<li>アカウントのメールアドレス（どのアカウントを読み込んだかの表示に使います）。</li>
+<li>迷惑メール・送信済み・下書き・チャットを除くメールの一覧（メールのID）。</li>
+<li>各メールのヘッダーの一部（From、To、Subject、Date、Message-ID、In-Reply-To、Delivered-To、Authentication-Results、List-Unsubscribe、List-Unsubscribe-Post、Precedence）と、Gmailが用意する本文冒頭の短い抜粋（snippet）。</li>
+<li>メール本文の全体や添付ファイルは取得しません。メールの変更・削除・送信・ラベル付けは一切行いません。</li>
+</ul>
+<h3>(2) データの使い方</h3>
+<ul>
+<li>差出人のドメインごとにメールをまとめ、利用者が登録したことのあるサービス（登録・ログイン・パスワード・注文などのメール）を見つけるためだけに使います。</li>
+<li>情報漏洩のお知らせが届いていたサービスを見分けて、利用者に示します。</li>
+<li>見つかったサービスごとに、公式サイト・パスワード変更・退会などの入口を案内します。</li>
+<li>集計したデータ（サービス名、ドメイン、届いた宛先、日付、最近の件名など）も、利用者の画面に表示するためだけに使います。</li>
+<li>広告（ターゲティング広告を含む）、信用・融資の判断、AI・機械学習モデルの開発・学習には使いません。</li>
+</ul>
+<h3>(3) データの共有・受け渡し</h3>
+<ul>
+<li>Googleユーザーデータ（そのままのデータも、集計・匿名化したデータも）を、当方が受け取ることはなく、第三者（広告主、データブローカー、AIサービスを含む）に提供・販売・移転することもありません。</li>
+<li>通信は、利用者のブラウザとGoogle（ログインとGmail API）の間だけで行います。</li>
+</ul>
+<h3>(4) データの保護</h3>
+<ul>
+<li>すべての処理は、利用者のパソコンのブラウザの中だけで行います。当方はサーバーを持たず、Googleユーザーデータがサーバーに送られることはありません。</li>
+<li>ページの設定（Content-Security-Policy）で、Googleのログインと Gmail API 以外への通信を止めています。通信はすべて暗号化（HTTPS）されます。</li>
+<li>アクセストークンはブラウザのメモリにだけ置き、ページを閉じると破棄します。保存はしません。</li>
+</ul>
+<h3>(5) 保存と削除</h3>
+<ul>
+<li>当方のサーバーには何も保存しません。</li>
+<li>利用者のブラウザには、追加したアカウントのメールアドレスだけを保存します。画面の「外す」で消せます。無料デモ版は、読み込んだ結果を保存しません（ページを閉じると消えます）。製品版は、集計した結果を利用者のブラウザの中にだけ保存し、画面の「すべて消して初期状態に戻す」でいつでも消せます。</li>
+<li>Googleへの許可は、画面の「外す」、または Google アカウントの「サードパーティのアクセス」（<a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">https://myaccount.google.com/permissions</a>）からいつでも取り消せます。</li>
+</ul>
+<h3>(6) 限定的使用の要件</h3>
+<p>IDおそうじによる Google API から受け取った情報の使用と、他のアプリへの移転は、限定的使用の要件を含む <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API サービスのユーザーデータに関するポリシー</a>に従います。</p>
+<h2>4. 本サイトについて</h2><p>本サイトは、現時点でアクセス解析やCookieを利用していません。ホスティングにはGitHub Pagesを、文字の表示にはGoogle Fontsを利用しており、アクセスの際にGitHubやGoogleのサーバーへ接続し、アクセスログが取得される場合があります。</p>
+<h2>5. お問い合わせ</h2><p>販売ページ(ココナラ等)のメッセージ機能や、noteへのコメントでご連絡いただいた際に取得する情報は、お問い合わせへの対応のためにのみ利用します。</p>
+<h2>6. 改定</h2><p>必要に応じて改定します。改定後は本ページに掲載します。</p>
+<h2 id="google-user-data-en">Google User Data (IDおそうじ Gmail edition) — English</h2>
+<p>This section describes how IDおそうじ (ID Osouji) handles data received from Google APIs ("Google user data").</p>
+<ul>
+<li><strong>Data accessed:</strong> Only the read-only scope <code>https://www.googleapis.com/auth/gmail.readonly</code> is requested. The app reads the account's email address, the list of message IDs (excluding spam, sent, drafts and chats), selected headers of each message (From, To, Subject, Date, Message-ID, In-Reply-To, Delivered-To, Authentication-Results, List-Unsubscribe, List-Unsubscribe-Post, Precedence) and the short snippet provided by Gmail. It never downloads full message bodies or attachments, and never modifies, deletes, sends or labels any email.</li>
+<li><strong>Data use:</strong> The data is used only to group messages by sender domain, identify online services the user has signed up for, highlight services that sent data-breach notices, and show links to each service's official settings, password-change and account-deletion pages. Aggregated data (service name, domain, recipient address, dates, recent subjects) is used only to display results to the user. Google user data is not used for advertising, credit or lending decisions, or to develop or train AI/ML models.</li>
+<li><strong>Data sharing:</strong> Neither raw nor aggregated/anonymized Google user data is received by A2E Works or shared with, sold or transferred to any third party (including advertisers, data brokers or AI services). The browser communicates only with Google (sign-in and Gmail API).</li>
+<li><strong>Data protection:</strong> All processing happens inside the user's browser. A2E Works operates no server that receives Google user data. The page's Content-Security-Policy blocks all connections except Google sign-in and the Gmail API, and all traffic is encrypted (HTTPS). The access token is kept only in memory and discarded when the page is closed.</li>
+<li><strong>Retention and deletion:</strong> Nothing is stored on any server of ours. The browser stores only the email addresses of added accounts (removable with "外す" / Remove). The free demo does not store analysis results; the paid edition stores aggregated results only in the user's browser and they can be deleted at any time with "すべて消して初期状態に戻す" (Reset all). Users can revoke access at any time with "外す" or at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">https://myaccount.google.com/permissions</a>.</li>
+<li><strong>Limited Use:</strong> IDおそうじ's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+</ul>
 </div></main>
 <div class="stripe"></div><footer class="site"><div class="wrap">
 <a href="../legal/terms.html">利用規約</a><a href="../legal/privacy.html">プライバシーポリシー</a><a href="../legal/tokushoho.html">特定商取引法に基づく表記</a><a data-github href="#">GitHub</a>
