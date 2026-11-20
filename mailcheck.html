@@ -8,9 +8,19 @@
 <span class="stamp">MAIL CHECK</span><h1><mark>メール公式チェッカー</mark></h1>
 <p class="lead">Gmailで開いたメールが<strong>本当に公式の送信元から届いたものか</strong>を判定して、本文の上に表示するChrome拡張機能です。<strong>本文のリンクはロック</strong>されていて、押しても開かず、本当の行き先だけを表示します。</p>
 <div class="btns"><a class="btn" href="downloads/mailcheck-ext-v0.7.zip" download>無料でダウンロード（v0.7・zip）</a></div>
-<p class="note">無料です。メールの内容は、あなたのパソコンの外に送りません（通信するのはGmail自身のページだけです）。パソコンのChrome・EdgeでGmailを使っている方向けです（スマホのGmailアプリ、Outlook、Yahoo!メールには対応していません）。</p>
+<p class="note">無料です。メールの内容は、あなたのパソコンの外に送りません（通信するのはGmail自身のページだけです）。パソコンのChrome・Microsoft EdgeでGmailを使っている方向けです（スマホのGmailアプリ、Outlook、Yahoo!メールには対応していません）。</p>
 
 <figure style="margin:24px 0"><img src="images/mailcheck/screen-lock.png" alt="偽のAmazonメールを開いたところ。危険と判定され、本文のリンクはロック中。押すと行き先が表示される" loading="lazy" width="1000" height="580" style="max-width:100%;height:auto;border:1px solid #ccc;border-radius:8px"><figcaption>画面の例（テスト用に作った偽メール）。リンクを押すと、本当の行き先だけを表示します。</figcaption></figure>
+
+<div class="warn-box" style="margin:28px 0;padding:18px 22px;background:#fff4e5;color:#2b1d0e;border:4px solid #e53935;border-radius:10px;box-shadow:6px 6px 0 #0f2b27">
+<p style="margin:0 0 8px;font-size:1.25em;font-weight:900;color:#c62828">⚠ 限界（必ずお読みください）</p>
+<ul style="margin:0;padding-left:1.3em;line-height:1.8">
+<li>判定は目安です。「公式の可能性：高」でも、企業のメールアカウント自体が乗っ取られた場合は見分けられません。</li>
+<li>登録リストにない会社は「注意」と出ることがあります。本物と確認できたものだけ「信頼済み」に追加してください。</li>
+<li>Gmailの画面の作りが変わると、表示されなくなることがあります。</li>
+<li>ログインや支払いは、メールのリンクではなく、公式アプリやブックマークから開くのがいちばん安全です。</li>
+</ul>
+</div>
 
 <h2>できること</h2>
 <table>
@@ -24,19 +34,12 @@
 <ol>
 <li>上のボタンからzipをダウンロードして、展開します（中の「mailcheck-ext」フォルダを、ドキュメントなど消さない場所に置きます）。</li>
 <li>Chromeのアドレス欄に <code>chrome://extensions</code> と入れて開きます（Edgeは <code>edge://extensions</code>）。</li>
-<li>右上（Edgeは左下）の「デベロッパー モード」をオンにします。</li>
-<li>「パッケージ化されていない拡張機能を読み込む」を押して、「mailcheck-ext」フォルダを選びます。</li>
+<li>右上の「デベロッパー モード」をオンにします（Edgeは左のメニューの「開発者モード」）。</li>
+<li>「パッケージ化されていない拡張機能を読み込む」（Edgeは「展開して読み込み」）を押して、「mailcheck-ext」フォルダを選びます。</li>
 <li>Gmailを開き直します（開いていたら Ctrl+F5）。メールを開くと、本文の上に判定が出ます。</li>
 </ol>
 <p class="note">ストアを通さない「デベロッパー モード」での配布です。Chromeの起動時に注意の表示が出ることがあります。中身はすべて読めるJavaScriptで、外部への通信はありません。</p>
 
-<h2>限界（必ずお読みください）</h2>
-<ul>
-<li>判定は目安です。「公式の可能性：高」でも、企業のメールアカウント自体が乗っ取られた場合は見分けられません。</li>
-<li>登録リストにない会社は「注意」と出ることがあります。本物と確認できたものだけ「信頼済み」に追加してください。</li>
-<li>Gmailの画面の作りが変わると、表示されなくなることがあります。</li>
-<li>ログインや支払いは、メールのリンクではなく、公式アプリやブックマークから開くのがいちばん安全です。</li>
-</ul>
 <h2>感想・不具合</h2>
 <p>「この公式メールが注意と出た」「表示が崩れた」などは、noteの記事へのコメントでお知らせください。</p>
 </div></main>
