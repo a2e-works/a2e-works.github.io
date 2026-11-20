@@ -7,7 +7,7 @@
 <main><div class="wrap">
 <span class="stamp">MAIL CHECK</span><h1><mark>メール公式チェッカー</mark></h1>
 <p class="lead">Gmailで開いたメールが<strong>本当に公式の送信元から届いたものか</strong>を判定して、本文の上に表示するChrome拡張機能です。<strong>本文のリンクはロック</strong>されていて、押しても開かず、本当の行き先だけを表示します。</p>
-<div class="btns"><a class="btn" href="https://github.com/a2e-works/mailcheck-ext/releases/latest/download/mailcheck-ext.zip">無料でダウンロード（最新版・zip）</a><span class="dl-ver" style="align-self:center;font-size:13px;opacity:.85;white-space:nowrap">v0.7.1（2026年11月20日）</span></div>
+<div class="btns"><a class="btn" href="https://github.com/a2e-works/mailcheck-ext/releases/latest/download/mailcheck-ext.zip">無料でダウンロード（最新版・zip）</a><span class="dl-ver" style="align-self:center;font-size:13px;opacity:.85;white-space:nowrap">v0.8.1（2026年11月21日）</span></div>
 <p class="note">無料です。メールの内容は、あなたのパソコンの外に送りません（通信するのはGmail自身のページだけです）。パソコンのChrome・Microsoft EdgeでGmailを使っている方向けです（スマホのGmailアプリ、Outlook、Yahoo!メールには対応していません）。</p>
 
 <figure style="margin:24px 0"><img src="images/mailcheck/screen-lock.png" alt="偽のAmazonメールを開いたところ。危険と判定され、本文のリンクはロック中。押すと行き先が表示される" loading="lazy" width="1000" height="580" style="max-width:100%;height:auto;border:1px solid #ccc;border-radius:8px"><figcaption>画面の例（テスト用に作った偽メール）。リンクを押すと、本当の行き先だけを表示します。</figcaption></figure>
@@ -16,7 +16,8 @@
 <p style="margin:0 0 8px;font-size:1.25em;font-weight:900;color:#c62828">⚠ 限界（必ずお読みください）</p>
 <ul style="margin:0;padding-left:1.3em;line-height:1.8">
 <li>判定は目安です。「公式の可能性：高」でも、企業のメールアカウント自体が乗っ取られた場合は見分けられません。</li>
-<li>登録リストにない会社は「注意」と出ることがあります。本物と確認できたものだけ「信頼済み」に追加してください。</li>
+<li>登録リストにない会社は「注意」と出ることがあります。本物と確認できたものだけ「信頼済み」に追加してください（Gmailなどフリーメールの相手は、<code>gmail.com</code> ではなくアドレス単位で登録します）。</li>
+<li>添付ファイルは名前と種類だけを見ています。中身がウイルスかどうかは調べていません。</li>
 <li>Gmailの画面の作りが変わると、表示されなくなることがあります。</li>
 <li>ログインや支払いは、メールのリンクではなく、公式アプリやブックマークから開くのがいちばん安全です。</li>
 </ul>
@@ -27,6 +28,8 @@
 <tr><th>判定</th><td>🟢 公式の可能性：高 ／ 🟡 注意 ／ 🔴 危険 の3段階。「理由を見る」で根拠を確認できます。</td></tr>
 <tr><th>調べていること</th><td>送信元認証（SPF・DKIM・DMARC）、差出人のドメイン（amaz0n のような似せたドメイン）、返信先、リンクの行き先と表示の違い、短縮URL、「24時間以内」「アカウント停止」のような文面、振込先の変更</td></tr>
 <tr><th>リンクのロック（v0.7）</th><td>本文のリンクは押しても開きません。押すと、本当の行き先（ドメイン）とURLを表示し、表示の文字と行き先が違えば警告します。開きたいメールだけ「このメールのリンクを有効にする」で開けます。設定でロックを外すこともできます。</td></tr>
+<tr><th>添付ファイルの注意（v0.8）</th><td>プログラム（.exe など）、Webページ形式（.html .svg）、ディスクイメージ（.iso .img）、マクロ付きOffice文書（.xlsm .docm など）、パスワード付きの圧縮ファイルが付いていると、注意や危険を表示します。「請求書.pdf.exe」のような書類に見せかけた名前も見つけます。</td></tr>
+<tr><th>自分あてのメール（v0.8）</th><td>自分のGmailから自分あてに送ったメールは「自分のアカウントから送ったメールです」と表示します。自分のアドレスを名乗る外からの偽メールは「危険」になります。</td></tr>
 <tr><th>取引先の登録</th><td>取引先のドメインを登録すると、似せたドメインや、返信先がいつもと違うメールを知らせます。</td></tr>
 </table>
 
