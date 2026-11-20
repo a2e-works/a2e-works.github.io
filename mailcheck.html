@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>メール公式チェッカー|A2E Works</title><link rel="icon" href="images/favicon.png"><meta name="description" content="Gmailで開いたメールが公式の送信元からかを判定し、本文のリンクをロックするChrome拡張機能（無料）。解析はブラウザの中だけで行います。">
+<meta property="og:title" content="メール公式チェッカー|偽メールを見分けて、リンクをロックする無料のChrome拡張機能"><meta property="og:description" content="送信元認証・ドメイン・リンク・文面からなりすましを判定。本文のリンクは押しても開かず、行き先だけを表示します。無料。"><meta property="og:image" content="https://a2e-works.github.io/images/mailcheck/screen-lock.png"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="site"><div class="wrap"><a class="brand" href="index.html"><img src="images/brand.png" alt="A2E WORKS"></a><nav><a href="index.html">トップ</a><a href="dencho-diy.html">電帳DIY</a><a href="id-osouji.html">IDおそうじ</a><a href="articles.html">記事</a><a href="changelog.html">更新履歴</a></nav></div></header><div class="stripe"></div>
+<main><div class="wrap">
+<span class="stamp">MAIL CHECK</span><h1><mark>メール公式チェッカー</mark></h1>
+<p class="lead">Gmailで開いたメールが<strong>本当に公式の送信元から届いたものか</strong>を判定して、本文の上に表示するChrome拡張機能です。<strong>本文のリンクはロック</strong>されていて、押しても開かず、本当の行き先だけを表示します。</p>
+<div class="btns"><a class="btn" href="downloads/mailcheck-ext-v0.7.zip" download>無料でダウンロード（v0.7・zip）</a></div>
+<p class="note">無料です。メールの内容は、あなたのパソコンの外に送りません（通信するのはGmail自身のページだけです）。パソコンのChrome・EdgeでGmailを使っている方向けです（スマホのGmailアプリ、Outlook、Yahoo!メールには対応していません）。</p>
+
+<figure style="margin:24px 0"><img src="images/mailcheck/screen-lock.png" alt="偽のAmazonメールを開いたところ。危険と判定され、本文のリンクはロック中。押すと行き先が表示される" loading="lazy" width="1000" height="580" style="max-width:100%;height:auto;border:1px solid #ccc;border-radius:8px"><figcaption>画面の例（テスト用に作った偽メール）。リンクを押すと、本当の行き先だけを表示します。</figcaption></figure>
+
+<h2>できること</h2>
+<table>
+<tr><th>判定</th><td>🟢 公式の可能性：高 ／ 🟡 注意 ／ 🔴 危険 の3段階。「理由を見る」で根拠を確認できます。</td></tr>
+<tr><th>調べていること</th><td>送信元認証（SPF・DKIM・DMARC）、差出人のドメイン（amaz0n のような似せたドメイン）、返信先、リンクの行き先と表示の違い、短縮URL、「24時間以内」「アカウント停止」のような文面、振込先の変更</td></tr>
+<tr><th>リンクのロック（v0.7）</th><td>本文のリンクは押しても開きません。押すと、本当の行き先（ドメイン）とURLを表示し、表示の文字と行き先が違えば警告します。開きたいメールだけ「このメールのリンクを有効にする」で開けます。設定でロックを外すこともできます。</td></tr>
+<tr><th>取引先の登録</th><td>取引先のドメインを登録すると、似せたドメインや、返信先がいつもと違うメールを知らせます。</td></tr>
+</table>
+
+<h2>入れ方（5分）</h2>
+<ol>
+<li>上のボタンからzipをダウンロードして、展開します（中の「mailcheck-ext」フォルダを、ドキュメントなど消さない場所に置きます）。</li>
+<li>Chromeのアドレス欄に <code>chrome://extensions</code> と入れて開きます（Edgeは <code>edge://extensions</code>）。</li>
+<li>右上（Edgeは左下）の「デベロッパー モード」をオンにします。</li>
+<li>「パッケージ化されていない拡張機能を読み込む」を押して、「mailcheck-ext」フォルダを選びます。</li>
+<li>Gmailを開き直します（開いていたら Ctrl+F5）。メールを開くと、本文の上に判定が出ます。</li>
+</ol>
+<p class="note">ストアを通さない「デベロッパー モード」での配布です。Chromeの起動時に注意の表示が出ることがあります。中身はすべて読めるJavaScriptで、外部への通信はありません。</p>
+
+<h2>限界（必ずお読みください）</h2>
+<ul>
+<li>判定は目安です。「公式の可能性：高」でも、企業のメールアカウント自体が乗っ取られた場合は見分けられません。</li>
+<li>登録リストにない会社は「注意」と出ることがあります。本物と確認できたものだけ「信頼済み」に追加してください。</li>
+<li>Gmailの画面の作りが変わると、表示されなくなることがあります。</li>
+<li>ログインや支払いは、メールのリンクではなく、公式アプリやブックマークから開くのがいちばん安全です。</li>
+</ul>
+<h2>感想・不具合</h2>
+<p>「この公式メールが注意と出た」「表示が崩れた」などは、noteの記事へのコメントでお知らせください。</p>
+</div></main>
+<div class="stripe"></div><footer class="site"><div class="wrap">
+<a href="legal/terms.html">利用規約</a><a href="legal/privacy.html">プライバシーポリシー</a><a href="legal/tokushoho.html">特定商取引法に基づく表記</a><a data-github href="#">GitHub</a>
+<p>&copy; <span id="year">2026</span> A2E Works</p></div></footer>
+<script src="js/data.js"></script><script src="js/main.js"></script></body></html>
