@@ -9,6 +9,16 @@
     return '<li><span class="tag">' + esc(a.tag || "記事") + '</span>' + t + '<div class="meta">' + esc(a.date) + '</div></li>';
   }
 
+  // noteの記事（js/note-feed.js、GitHub Actions が3時間ごとに自動更新）を先頭に、
+  // data.js の articles のうちまだ公開していないもの（url が空）を後ろに並べる
+  var N = (window.A2E_NOTE && window.A2E_NOTE.items) || [];
+  if (N.length) {
+    var seen = {};
+    N.forEach(function (n) { seen[n.title] = 1; });
+    D.articles = N.map(function (n) { return { date: n.date, title: n.title, url: n.url, tag: "note" }; })
+      .concat((D.articles || []).filter(function (a) { return !a.url && !seen[a.title]; }));
+  }
+
   var al = document.getElementById("articleList");
   if (al) al.innerHTML = D.articles.map(articleItem).join("");
 
