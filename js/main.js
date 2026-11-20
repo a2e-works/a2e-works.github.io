@@ -42,4 +42,17 @@
     else off(el, "販売開始までお待ちください");
   });
   var y = document.getElementById("year"); if (y) y.textContent = new Date().getFullYear();
+
+  // ヘッダーに最終更新日を表示（更新履歴 changelog のいちばん新しい日付）
+  var dates = (D.changelog || []).map(function (c) { return c.date; }).filter(Boolean).sort();
+  var brand = document.querySelector("header.site .brand");
+  if (dates.length && brand && !document.querySelector(".updated")) {
+    var d = dates[dates.length - 1].split("-");
+    var box = document.createElement("div"); box.className = "brandbox";
+    brand.parentNode.insertBefore(box, brand); box.appendChild(brand);
+    var u = document.createElement("a"); u.className = "updated";
+    u.href = brand.getAttribute("href").replace(/index\.html$/, "changelog.html");
+    u.textContent = "最終更新 " + d[0] + "年" + Number(d[1]) + "月" + Number(d[2]) + "日";
+    box.appendChild(u);
+  }
 })();
