@@ -123,7 +123,7 @@ Gmail・ドコモメールなどのキャリアメール・プロバイダのメ
 </ol>
 <h3>バックアップのしかた（大事）</h3>
 <p>Thunderbirdで受け取っただけ（IMAP）では、<strong>バックアップになりません</strong>。
-IMAPは両方が連動するので、Thunderbirdで消すとサーバーからも消え、サーバーで消えると Thunderbird からも消えます。</p>
+IMAPは両方が連動するので、サーバー（ブラウザのGmailなど）で消したメールは、Thunderbirdからもすぐ消えます。逆に、Thunderbirdで消したメールは、Gmailの設定によっては「すべてのメール」やごみ箱にしばらく残ります。完全に消したいときは、ブラウザのGmailでごみ箱からも削除してください。</p>
 <p>残しておきたいメールは、次のどれかで「手元だけのコピー」を作ってください。</p>
 <ul>
 <li><strong>ローカルフォルダにコピーする（いちばん簡単）</strong>
@@ -166,7 +166,7 @@ Yahoo! 側の変更で、この方法が使えなくなることもあります�
 </ol>
 <h3>4. 気をつけること</h3>
 <ul>
-<li><strong>Thunderbirdでメールを消すと、Yahoo!メールからも消えます。</strong> IMAPは両方が連動するためです。</li>
+<li><strong>Thunderbirdでメールを消すと、Yahoo!メールのほうでも消えます（ごみ箱に移ります）。</strong> IMAPは両方が連動するためです。</li>
 <li>受信が終わったら、IDおそうじの「Thunderbird・Outlook」から、プロファイルフォルダ（「（英数字）.default-release」）を選びます。</li>
 </ul>
 <hr>
@@ -176,6 +176,8 @@ Yahoo! 側の変更で、この方法が使えなくなることもあります�
 選んだフォルダが違う可能性があります。<code>ImapMail</code> と <code>Mail</code> が入っている「（英数字）.default-release」のフォルダを選び直してみてください。</li>
 <li><strong>使っているアカウントの一部が「アドレスごとの一覧」に出ない</strong>
 <code>imap.gmail.com</code> などアカウントのフォルダを1つだけ選んでいる可能性があります。1つ上の <code>ImapMail</code> のさらに上、「（英数字）.default-release」を選び直してください。それでも出ないときは、Thunderbirdでそのアカウントの「設定」→「同期とディスク領域」で「このアカウントのメッセージをこのコンピューターに保存する」にチェックが入っているか確かめてください。</li>
+<li><strong>消したはずのメールが読み込まれる</strong>
+Thunderbirdは、メールを消しても、しばらくはパソコンのファイルに中身を残しています。IDおそうじは、Thunderbirdのメール一覧（拡張子 .msf のファイル）も読んで、消したメールを自動で数えないようにしています（読み込みのあとに「Thunderbirdで削除済みのメール ○通は数えていません」と出ます）。この仕組みは<strong>フォルダごと選んだとき</strong>だけ働くので、それでも読まれる場合は「（英数字）.default-release」のフォルダを選び直してください。</li>
 <li><strong>Thunderbirdで受け取ったメールが少ししか読み込まれない</strong>
 Thunderbirdの受信が終わっていない可能性があります。Thunderbirdで各フォルダを一度ずつ開き、受信が終わってからもう一度読み込んでください。</li>
 </ul>
