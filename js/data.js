@@ -15,7 +15,7 @@ window.A2E = {
       idosouji: {
         demo: "",   // デモ版。公開したら "https://a2e-works.github.io/id-osouji/" に戻す(a2e-works/id-osouji の GitHub Pages)
         download: "",  // デモ版のzip。GitHub の Releases を作ったら "https://github.com/a2e-works/id-osouji/releases/latest" を入れる
-        guide: "https://a2e-works.github.io/id-osouji/docs/mail-guide.html",  // メールの読み込み手順
+        guide: "docs/id-osouji-mail-guide.html",  // メールの読み込み手順（id-osouji リポジトリを非公開にしたので、公式サイトの中に置いた）
         buy: ""                                                              // Vector などの販売ページURL
       }
     }
