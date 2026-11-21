@@ -2,6 +2,12 @@
 window.A2E_NOTE = {
  "items": [
   {
+   "title": "委託先からの漏えいが止まらない。つながった個人情報は「ニセ警察」「ニセ役所」の詐欺の台本になる",
+   "url": "https://note.com/a2e_works/n/n8304c2d63ed6",
+   "date": "2026-11-21",
+   "thumb": "https://assets.st-note.com/production/uploads/images/338905713/rectangle_large_type_2_15bdceb980b8443459d18b6ef2baaa69.jpeg?width=800"
+  },
+  {
    "title": "ブラックフライデーは偽メールの季節。偽通販・偽配送の最新手口と、無料のGmail用「リンクロック」拡張機能",
    "url": "https://note.com/a2e_works/n/nf026eb82f811",
    "date": "2026-11-20",
