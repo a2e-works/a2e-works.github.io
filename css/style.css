@@ -118,7 +118,9 @@ body.legal .note{background:#f7f7f5;border:1px solid #cfcfcb;color:#333}
 @media (max-width:600px){body.legal main .wrap{padding:26px 18px;border-left:0;border-right:0}}
 body.legal h1+.note{margin-top:14px;text-align:left}
 
-.sns-row{margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px}
+.sns-row{margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:10px 8px}
 .sns{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:.92rem}
 .sns:hover{background:none;color:var(--or)}
 .sns img,.sns svg{display:block;width:20px;height:20px;box-sizing:content-box;padding:8px;background:var(--cream);border-radius:50%;border:2px solid var(--or)}
+.sns img.sns-note{width:36px;height:36px;padding:0}
+.sns{min-width:124px}
