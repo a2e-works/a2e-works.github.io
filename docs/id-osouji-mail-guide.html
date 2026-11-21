@@ -64,18 +64,23 @@ blockquote { margin: 12px 0; padding: 8px 14px; border-left: 4px solid var(--lin
 <h3>Thunderbird</h3>
 <ol>
 <li>IDおそうじのトップで <strong>「Thunderbird・Outlook」</strong> を押します。</li>
-<li><strong>「フォルダを選ぶ（Thunderbird）」</strong> を押し、次のどちらかのフォルダを選びます。<ul>
-<li><strong><code>ImapMail</code></strong>：Gmail・Yahoo!メールなどを IMAP で受け取っている場合</li>
-<li><strong><code>Mail</code></strong>：POP で受け取っている場合</li>
-</ul>
-</li>
-<li>ブラウザに「アップロードしますか？」と出たら、「アップロード」を押します（実際にはどこにも送りません）。</li>
+<li><strong>「フォルダを選ぶ（Thunderbird）」</strong> を押し、<strong>プロファイルフォルダ（「（英数字）.default-release」という名前のフォルダ）</strong>を選びます。中の <code>ImapMail</code>（IMAPで受け取っているアカウント）と <code>Mail</code>（POPで受け取っているアカウント）を、全部のアカウントまとめて読み込みます。
+<pre style="font-size:.9em;line-height:1.5;background:#f6f6f2;border:1px solid #ddd;border-radius:6px;padding:8px 12px;overflow-x:auto">（英数字）.default-release   ← ここを選ぶ
+├ ImapMail   … Gmail・Yahoo!メールなど（IMAPで受け取っているアカウント）
+│ ├ imap.gmail.com      … 1つ目のアカウント
+│ ├ imap.gmail-1.com    … 2つ目のアカウント
+│ └ imap.mail.yahoo.co.jp
+├ Mail       … POPで受け取っているアカウント・ローカルフォルダ
+└ そのほか（設定・RSSなど。自動で外します）</pre>
+<code>imap.gmail.com</code> などを1つだけ選ぶと、そのアカウントしか読み込みません。</li>
+<li>ブラウザに「このサイトに ○個のファイルをアップロードしますか？」と出たら、「アップロード」を押します（実際にはどこにも送りません）。Thunderbirdはフォルダ1つ（受信トレイなど）を1つのファイルにまとめて保存しているので、ファイルの数はメールの数より少なくて正常です。</li>
+<li>読み込んだあと、「アドレスごとの一覧」に、使っているアドレスが全部出ているか確かめます。</li>
 </ol>
 <p><strong>Thunderbirdのメールの場所</strong></p>
 <ul>
 <li>Thunderbirdのメニュー「ヘルプ」→「トラブルシューティング情報」→「プロファイルフォルダー」の <strong>「フォルダーを開く」</strong> で分かります。</li>
 <li>Windowsでは、通常は <code>C:\Users\（ユーザー名）\AppData\Roaming\Thunderbird\Profiles\（英数字）.default-release\</code> の中にあります。</li>
-<li>迷惑メール・送信済み・下書きのフォルダは、自動で外します。ごみ箱は、消した登録メールが残っていることがあるので読み込みます。</li>
+<li>迷惑メール・送信済み・下書き、RSS（ブログとニュース）、設定などのフォルダは、自動で外します。ごみ箱は、消した登録メールが残っていることがあるので読み込みます。</li>
 </ul>
 <h3>Outlook（パソコンのOutlook）</h3>
 <ol>
@@ -101,7 +106,7 @@ blockquote { margin: 12px 0; padding: 8px 14px; border-left: 4px solid var(--lin
 <li><strong>全部のメールを1つの画面で見られる</strong>
 Gmail・ドコモメールなどのキャリアメール・プロバイダのメール・Yahoo!メール（参考の手順あり）などを、まとめて登録できます。サービスごとにアプリやWebを開き直す必要がなくなります。</li>
 <li><strong>IDおそうじで、ボタン1つで全部のアドレスを棚卸しできる</strong>
-<code>ImapMail</code> フォルダを選ぶだけで、登録したすべてのアドレスのメールをまとめて読み込みます。各サービスに「どのアドレスで登録したか」も表示されます。</li>
+プロファイルフォルダを選ぶだけで、登録したすべてのアドレスのメールをまとめて読み込みます。各サービスに「どのアドレスで登録したか」も表示されます。</li>
 <li><strong>古いメールを手元に残せる（バックアップ）</strong>
 下の「バックアップのしかた」の一手間をかけると、サービスが終わっても、アドレスを解約しても、メールが残ります。</li>
 </ul>
@@ -114,7 +119,7 @@ Gmail・ドコモメールなどのキャリアメール・プロバイダのメ
 <li>パスワードは Google の画面で入れます。Thunderbird にも IDおそうじにも残りません。</li>
 </ul>
 </li>
-<li>受信が終わったら、IDおそうじで <code>ImapMail</code> フォルダを選びます。Thunderbirdで受け取っている全部のメールが一緒に読み込まれます。</li>
+<li>受信が終わったら、IDおそうじでプロファイルフォルダ（<code>ImapMail</code> と <code>Mail</code> が入っている「（英数字）.default-release」）を選びます。Thunderbirdで受け取っている全部のメールが一緒に読み込まれます。</li>
 </ol>
 <h3>バックアップのしかた（大事）</h3>
 <p>Thunderbirdで受け取っただけ（IMAP）では、<strong>バックアップになりません</strong>。
@@ -162,13 +167,15 @@ Yahoo! 側の変更で、この方法が使えなくなることもあります�
 <h3>4. 気をつけること</h3>
 <ul>
 <li><strong>Thunderbirdでメールを消すと、Yahoo!メールからも消えます。</strong> IMAPは両方が連動するためです。</li>
-<li>受信が終わったら、IDおそうじの「Thunderbird・Outlook」から <code>ImapMail</code> フォルダを選びます。</li>
+<li>受信が終わったら、IDおそうじの「Thunderbird・Outlook」から、プロファイルフォルダ（「（英数字）.default-release」）を選びます。</li>
 </ul>
 <hr>
 <h2>うまくいかないとき</h2>
 <ul>
 <li><strong>「読み込めるメールファイルが見つかりませんでした」と出る</strong>
-選んだフォルダが違う可能性があります。<code>ImapMail</code> や <code>Mail</code> の1つ上、または1つ下のフォルダを選び直してみてください。</li>
+選んだフォルダが違う可能性があります。<code>ImapMail</code> と <code>Mail</code> が入っている「（英数字）.default-release」のフォルダを選び直してみてください。</li>
+<li><strong>使っているアカウントの一部が「アドレスごとの一覧」に出ない</strong>
+<code>imap.gmail.com</code> などアカウントのフォルダを1つだけ選んでいる可能性があります。1つ上の <code>ImapMail</code> のさらに上、「（英数字）.default-release」を選び直してください。それでも出ないときは、Thunderbirdでそのアカウントの「設定」→「同期とディスク領域」で「このアカウントのメッセージをこのコンピューターに保存する」にチェックが入っているか確かめてください。</li>
 <li><strong>Thunderbirdで受け取ったメールが少ししか読み込まれない</strong>
 Thunderbirdの受信が終わっていない可能性があります。Thunderbirdで各フォルダを一度ずつ開き、受信が終わってからもう一度読み込んでください。</li>
 </ul>
