@@ -2,6 +2,12 @@
 window.A2E_NOTE = {
  "items": [
   {
+   "title": "Gmailで他社のメールが受け取れなくなった今こそ。無料のメールソフト「Thunderbird」で、メールを1か所にまとめよう",
+   "url": "https://note.com/a2e_works/n/nd0939a7d213c",
+   "date": "2026-11-22",
+   "thumb": "https://assets.st-note.com/production/uploads/images/339280776/rectangle_large_type_2_ad17316b5d8934b24b9922870624902f.jpeg?width=800"
+  },
+  {
    "title": "委託先からの漏えいが止まらない。つながった個人情報は「ニセ警察」「ニセ役所」の詐欺の台本になる",
    "url": "https://note.com/a2e_works/n/n8304c2d63ed6",
    "date": "2026-11-21",
