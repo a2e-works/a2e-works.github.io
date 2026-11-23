@@ -11,6 +11,8 @@
 
   // noteの記事（js/note-feed.js、GitHub Actions が3時間ごとに自動更新）を先頭に、
   // data.js の articles のうちまだ公開していないもの（url が空）を後ろに並べる
+  // hidden: true の記事（まだ出さない下書き）は一覧に載せない
+  D.articles = (D.articles || []).filter(function (a) { return !a.hidden; });
   var N = (window.A2E_NOTE && window.A2E_NOTE.items) || [];
   if (N.length) {
     var seen = {};
