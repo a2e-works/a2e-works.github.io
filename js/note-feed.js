@@ -2,6 +2,12 @@
 window.A2E_NOTE = {
  "items": [
   {
+   "title": "パスワードだけでは守れない時代に。「多要素認証」と「パスキー」の違いと、今日からできる設定のしかた",
+   "url": "https://note.com/a2e_works/n/n4d9413c4d781",
+   "date": "2026-11-23",
+   "thumb": "https://assets.st-note.com/production/uploads/images/339717345/rectangle_large_type_2_09a2933218f3a03f77e102b3ba63192d.jpeg?width=800"
+  },
+  {
    "title": "Gmailで他社のメールが受け取れなくなった今こそ。無料のメールソフト「Thunderbird」で、メールを1か所にまとめよう",
    "url": "https://note.com/a2e_works/n/nd0939a7d213c",
    "date": "2026-11-22",
