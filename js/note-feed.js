@@ -2,6 +2,12 @@
 window.A2E_NOTE = {
  "items": [
   {
+   "title": "「本物の注文内容」で来る偽の連絡と、「パスワードはハッシュ化済み」の本当の意味。漏えいのお知らせを読むときの2つのポイント",
+   "url": "https://note.com/a2e_works/n/nb63ec3aa9a54",
+   "date": "2026-11-24",
+   "thumb": "https://assets.st-note.com/production/uploads/images/340126201/rectangle_large_type_2_d8e156f8f396681d02643c75d7acfdf1.jpeg?width=800"
+  },
+  {
    "title": "パスワードだけでは守れない時代に。「多要素認証」と「パスキー」の違いと、今日からできる設定のしかた",
    "url": "https://note.com/a2e_works/n/n4d9413c4d781",
    "date": "2026-11-23",
