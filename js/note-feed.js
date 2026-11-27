@@ -2,6 +2,12 @@
 window.A2E_NOTE = {
  "items": [
   {
+   "title": "1Passwordに不正アクセス、Gmailを盗み読む偽の拡張機能も。パスワードは無事でも「名簿」が漏れた今、使っている人がやること",
+   "url": "https://note.com/a2e_works/n/nfa746f03f77e",
+   "date": "2026-11-27",
+   "thumb": "https://assets.st-note.com/production/uploads/images/341415822/rectangle_large_type_2_35411ca32b06e3f72c1f7576cff4c8b2.jpeg?width=800"
+  },
+  {
    "title": "楽天証券「第2報」で分かったこと。口座を作りかけてやめた人も対象に。使っている人・やめた人・家族、立場別に今日やること",
    "url": "https://note.com/a2e_works/n/ne10ae77a030b",
    "date": "2026-11-26",
