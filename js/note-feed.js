@@ -2,6 +2,18 @@
 window.A2E_NOTE = {
  "items": [
   {
+   "title": "楽天証券「第2報」で分かったこと。口座を作りかけてやめた人も対象に。使っている人・やめた人・家族、立場別に今日やること",
+   "url": "https://note.com/a2e_works/n/ne10ae77a030b",
+   "date": "2026-11-26",
+   "thumb": "https://assets.st-note.com/production/uploads/images/341036264/rectangle_large_type_2_2327df136b43e00efb643919f9e77803.jpeg?width=800"
+  },
+  {
+   "title": "京王グループの漏えいはランサムウェア。KADOKAWA・アサヒ・アスクルに続く「会社が止まる攻撃」で、本人確認書類まで漏れたら何をする？",
+   "url": "https://note.com/a2e_works/n/nef783ac6d95a",
+   "date": "2026-11-25",
+   "thumb": "https://assets.st-note.com/production/uploads/images/340276164/rectangle_large_type_2_a94f97f09a908777445e686f96bea24b.jpeg?width=800"
+  },
+  {
    "title": "「本物の注文内容」で来る偽の連絡と、「パスワードはハッシュ化済み」の本当の意味。漏えいのお知らせを読むときの2つのポイント",
    "url": "https://note.com/a2e_works/n/nb63ec3aa9a54",
    "date": "2026-11-24",
