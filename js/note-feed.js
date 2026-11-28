@@ -2,6 +2,12 @@
 window.A2E_NOTE = {
  "items": [
   {
+   "title": "お詫びメールが止まらない1週間。エポスカードは「年収・キャッシング限度額」、マネックス証券は「本人確認書類の画像」。KARTEは来年1月まで停止のまま",
+   "url": "https://note.com/a2e_works/n/na15bac91cc22",
+   "date": "2026-11-28",
+   "thumb": "https://assets.st-note.com/production/uploads/images/341795252/rectangle_large_type_2_56050bd517de613e8d661dec77f6b41c.jpeg?width=800"
+  },
+  {
    "title": "1Passwordに不正アクセス、Gmailを盗み読む偽の拡張機能も。パスワードは無事でも「名簿」が漏れた今、使っている人がやること",
    "url": "https://note.com/a2e_works/n/nfa746f03f77e",
    "date": "2026-11-27",
